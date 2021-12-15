@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            background: #333;
+            font-size: 62.5%;
+            line-height: 1.7;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .clock {
+            font-size: 5rem;
+            text-align: center;
+            margin: 20rem auto;
+            color: yellow;
+        }
+
+        .clock div {
+            margin-bottom: 3rem;
+        }
+
+        .clock h4 {
+            display: inline;
+            padding: 2rem;
+            background: #444;
+        }
+
+
+        @media screen and (max-width: 500px) {
+            .clock {
+                font-size: 2.5rem;
+            }
+
+            .clock h4 {
+                padding: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+            .clock {
+                font-size: 2rem;
+            }
+
+            .clock h4 {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="clock"></div>
+    <script src="dates.js"></script>
+</body>
+
+</html>
